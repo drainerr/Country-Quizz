@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b2778aa4.css",
+    "main.js": "/static/js/main.3ceaaf49.js",
+    "static/media/undraw_winners_ao2o 2.svg": "/static/media/undraw_winners_ao2o 2.d76bfdf87016eda38fd439d929ce0371.svg",
+    "static/media/background.png": "/static/media/background.41dbc5504a105eae7176.png",
+    "static/media/loading-buffering.gif": "/static/media/loading-buffering.c7d9f0819b0870f9ad8e.gif",
+    "static/media/undraw_adventure_4hum 1.svg": "/static/media/undraw_adventure_4hum 1.182b6171bba7c99e5444500b4daec361.svg",
+    "index.html": "/index.html",
+    "main.b2778aa4.css.map": "/static/css/main.b2778aa4.css.map",
+    "main.3ceaaf49.js.map": "/static/js/main.3ceaaf49.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b2778aa4.css",
+    "static/js/main.3ceaaf49.js"
+  ]
+}
