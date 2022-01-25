@@ -1,38 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background-image: url(./Assets/background.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+.MainWrapper {
+  position: relative;
+}
+.GlobusImg {
+  min-height: 120px;
+  width: 170px;
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+.MainWrapper h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 54px;
+  color: #f2f2f2;
+  margin-bottom: 5px;
+}
+.Flag {
+  top: 100px;
+  left: 50px;
+  margin-top: unset;
+  position: absolute;
+  height: 50px;
+  width: 80px;
+  margin-bottom: -20px;
+}
+main {
+  min-height: 470px;
+  border-radius: 24px;
+  background-color: white;
+  width: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Loading {
+  height: 50px;
+  width: 50px;
+}
+.QuestionWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: inherit;
+}
+.Question {
+  width: calc(100% - 60px);
+  text-align: left;
+  font-size: 24px;
+  min-height: 72px;
+  margin-left: 40px;
+  color: #2f527b;
+  margin-top: 80px;
+  font-weight: 700;
+  line-height: 36px;
+}
+.ChoicesList {
+  list-style: none;
+  width: calc(100% - 60px);
+}
+.ListItem {
+  margin-top: 20px;
+  width: calc(100% - 30px);
+  min-height: 40px;
+}
+.ListItem button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: inherit;
+  font-size: 18px;
+  text-align: left;
+  border: none;
+  background-color: white;
+  color: #6066d0cc;
+  line-height: 20px;
+  border: 2px solid #6066d0b2;
+  border-radius: 12px;
+}
+.ListItem button:hover {
+  background: #f9a826;
+  border-color: #f9a826;
+  color: white;
+  transition: 0.15s linear;
+  cursor: pointer;
+}
+.ListItem:nth-child(1) {
+  margin-top: unset;
+}
+
+.Alpha {
+  font-size: 24px;
+  line-height: 36px;
+  margin-left: 15px;
+  margin-right: 40px;
+}
+.ResultsWrapper {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column;
+  height: 100%;
+}
+.ResultsWrapper h1 {
+  font-size: 48px;
+  line-height: 72px;
+  color: #1d355d;
+  font-weight: 700;
+}
+.ResultsWrapper p {
+  font-size: 18px;
+  line-height: 54px;
+  font-weight: 700;
+  color: #1d355d;
+}
+.ResultsWrapper p span {
+  color: lightgreen;
+  font-size: 28px;
+}
+.ResultsWrapper button {
+  color: #1d355d;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 18px 50px;
+  font-weight: 600;
+  border: 2px solid #1d355d;
+  border-radius: 12px;
+  background-color: white;
+}
+.ResultsWrapper button:hover {
+  cursor: pointer;
+  background-color: #1d355d;
   color: white;
+  transition: 0.3s ease;
+}
+.NextButton {
+  align-self: end;
+  margin-right: 40px;
+  background-color: #f9a826;
+  font-size: 18px;
+  border-radius: 12px;
+  height: 40px;
+  width: 100px;
+  border: unset;
+  margin-bottom: 15px;
+  color: white;
+  box-shadow: 0px 2px 4px 0px #fca82f66;
+}
+.NextButton:hover {
+  cursor: pointer;
+  background-color: #fcc102fd;
+  transition: 0.2s ease;
+}
+.hideNextButton {
+  display: none;
+}
+.Credits {
+  padding: 30px 0;
+  color: #f2f2f2;
+  font-size: 14px;
+  line-height: 17px;
+}
+.correctAnswer {
+  background: #60bf88 !important;
+  border-color: #60bf88 !important;
+  color: white !important;
+}
+.Creator {
+  text-decoration: underline;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 420px) {
+  .App {
+    overflow-x: hidden;
   }
-  to {
-    transform: rotate(360deg);
+  main {
+    border-radius: unset;
+    width: 100vw;
+  }
+  .Question {
+    width: 90%;
+  }
+  .GlobusImg {
+    width: 8em;
+  }
+  .MainWrapper h1 {
+    font-size: 7vw;
+  }
+  .Credits {
+    text-align: center;
+  }
+  .ChoicesList {
+    width: 90%;
   }
 }
